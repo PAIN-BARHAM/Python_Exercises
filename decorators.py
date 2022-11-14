@@ -5,9 +5,10 @@ def start_end_decorator(func):
 
     @functools.wraps(func)
     def wrapper(*args, **kwargs):
-        print('Start')
+        # Do ..
         result = func(*args, **kwargs)
         print('End')
+        # Do ..
         return result
     return wrapper
 
